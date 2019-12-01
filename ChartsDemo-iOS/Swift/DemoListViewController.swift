@@ -19,7 +19,11 @@ private struct ItemDef {
 class DemoListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
-    private var itemDefs = [ItemDef(title: "Line Chart",
+    private var itemDefs = [
+                    ItemDef(title: "CrashWhenNaN",
+                            subtitle: "A simple demonstration of the bug",
+                            class: CrashWhenNaNViewController.self),
+                    ItemDef(title: "Line Chart",
                             subtitle: "A simple demonstration of the linechart.",
                             class: LineChart1ViewController.self),
                     ItemDef(title: "Line Chart (Dual YAxis)",
